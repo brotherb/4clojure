@@ -1,0 +1,1 @@
+(fn [x] (map #(first %) (partition-by identity x)))
