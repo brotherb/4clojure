@@ -1,7 +1,7 @@
 (fn deni
   [x n]
   (if (empty? x) '()
-    (into (deni (drop n x) n) (reverse (take (dec n) x)))))
+    (concat (take (dec n) x) (deni (drop n x) n))))
 
 or
 
